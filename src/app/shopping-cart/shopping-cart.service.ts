@@ -13,7 +13,7 @@ export class ShoppingCartService {
   }
 
   totalAmount(): number | undefined {
-    return undefined;
+    return this.books.reduce((total, book) => total + book.price, 0);
   }
 
   getShoppingCart(): Observable<Book[]> {
