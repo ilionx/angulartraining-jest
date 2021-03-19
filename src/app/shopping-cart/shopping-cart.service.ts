@@ -12,8 +12,8 @@ export class ShoppingCartService {
   constructor(private httpClient: HttpClient) {
   }
 
-  totalAmount(): number {
-    return 0;
+  totalAmount(): number | undefined {
+    return undefined;
   }
 
   getShoppingCart(): Observable<Book[]> {
