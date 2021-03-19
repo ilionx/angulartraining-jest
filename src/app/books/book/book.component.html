@@ -1,0 +1,14 @@
+<table>
+  <thead>
+  <tr class="table-header">
+    <td>Author</td>
+    <td>Price</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>{{ book.author }}</td>
+    <td>{{ book.price | currency: 'EUR': true }}</td>
+  </tr>
+  </tbody>
+</table>

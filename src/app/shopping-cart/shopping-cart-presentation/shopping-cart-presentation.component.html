@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let book of books | async">
+    <h2 class="title">{{book.title}}</h2>
+    <ibs-book [book]="book"></ibs-book>
+  </li>
+</ul>
+
+<a href="#" id="clearShoppingCart" (click)="clearShoppingCart.emit()">Clear shopping cart</a>
